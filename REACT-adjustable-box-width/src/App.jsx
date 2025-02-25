@@ -80,6 +80,11 @@ export default function App() {
       <div>
         <Box boxSize={boxSize} />
       </div>
+      <Button
+        className="reset_button"
+        value={"RESET"}
+        onChangeSize={() => setBoxSize(200)}
+      />
     </div>
   );
 }
