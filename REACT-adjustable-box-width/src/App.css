@@ -1,0 +1,81 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100vh;
+  font-size: 10px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  min-width: 320px;
+  height: 100%;
+  background-color: #132330;
+  user-select: none;
+}
+
+.app_container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #999;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border: 1px solid transparent;
+  margin: 0 2rem;
+}
+button:hover {
+  opacity: .75;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+label, input{
+  font-size: 1.7rem;
+}
+
+input {
+  padding: .75rem 1.3rem;
+  width: 10rem;
+}
+
+.box {
+  background-color: rgb(147, 23, 23);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
